@@ -1,9 +1,9 @@
 {
-  "name": "Font test",
+  "name": "Icon font test",
   "package_path": "https://rnowm.github.com/icon-font-test/package/package.zip",
   "size": 59859,
   "version": "1.0",
-  "description": "Font test",
+  "description": "Icon font test",
   "launch_path": "app.html",
   "orientation": ["portrait"],
   "developer": {
