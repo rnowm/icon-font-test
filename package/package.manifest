@@ -1,0 +1,14 @@
+{
+  "name": "Font test",
+  "package_path": "https://rnowm.github.com/icon-font-test/package/package.zip",
+  "size": 59859,
+  "version": "1.0",
+  "description": "Font test",
+  "launch_path": "app.html",
+  "orientation": ["portrait"],
+  "developer": {
+    "name": "Arnau March",
+    "url": "http://buildingfirefoxos.com"
+  },
+  "default_locale": "en"
+}

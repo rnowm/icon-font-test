@@ -1,0 +1,11 @@
+{
+  "name": "Icon font",
+  "description": "Icon Font test",
+  "launch_path": "app.html",
+  "orientation": ["portrait"],
+  "developer": {
+    "name": "Arnau March",
+    "url": "http://buildingfirefoxos.com"
+  },
+  "default_locale": "en"
+}
