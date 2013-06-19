@@ -92,14 +92,29 @@
 
 	<script>
 	//resizing
+  function min_device_width() {
+    var match = window.matchMedia("(min-device-width: 320px)").matches;
+    var size = 320;
+
+    while (match) {
+      size++;
+      match = window.matchMedia("(min-device-width: "+size+"px)").matches
+    }
+    return size - 1;
+  }
 	var mobile = (navigator.userAgent.search("Mobile") != -1);
 	if ( mobile ) {
-      var ww = window.innerWidth;
-    	var wh = window.innerHeight;
+      //var ww = window.innerWidth;
+    	//var wh = window.innerHeight;
       //if potrait -> real with = window width
-      var realw = (ww/wh < 1) ? ww : wh;
+      //var realw = (ww/wh < 1) ? ww : wh;
 
-      document.getElementById("screen-w").innerHTML = realw;
+      var pr = window.devicePixelRatio;
+      var realw = min_device_width() * pr;
+      var fs = realw / 32;
+
+      document.getElementById("screen-w").innerHTML = realw + 'px';
+      document.body.style.fontSize = fs + 'px';
     } else {
     	document.getElementById("screen-w").innerHTML = "not a phone!"
     }
