@@ -60,7 +60,9 @@
 </style>
 </head>
 <body>
-	<h3>Screen width: <span id="screen-w">unknown</span></h3>
+  <h3>Screen width: <span id="device-w">unknown</span></h3>
+  <h3>Pixel ratio: <span id="device-pr">unknown</span></h3>
+	<h3>Font size: <span id="device-fs">unknown</span></h3>
 	<div class="w-main centered">
 	<section class="mtm clearfix" id="glyphs">
 
@@ -113,10 +115,15 @@
       var realw = min_device_width() * pr;
       var fs = realw / 32;
 
-      document.getElementById("screen-w").innerHTML = realw + 'px';
+      document.getElementById("device-w").innerHTML = realw + 'px';
+      document.getElementById("device-pr").innerHTML = pr;
+      document.getElementById("device-fs").innerHTML = fs;
+      
       document.body.style.fontSize = fs + 'px';
     } else {
-    	document.getElementById("screen-w").innerHTML = "not a phone!"
+      document.getElementById("device-w").innerHTML = "not a phone!"
+      document.getElementById("device-pr").innerHTML = "not a phone!"
+    	document.getElementById("device-fs").innerHTML = "not a phone!"
     }
 	</script>
 </body>
