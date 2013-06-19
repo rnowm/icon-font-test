@@ -8,14 +8,14 @@
     var supportHIDPI = false;
     var isFFOS = ("mozApps" in navigator && navigator.userAgent.search("Mobile") != -1);
 
-    /*if ( isFFOS ) {
+    if ( isFFOS ) {
       var URL = 'http://rnowm.github.io/icon-font-test/package/';
 
-      if ( window.devicePixelRatio > 1.2 && supportHIDPI ) {
+      /*if ( window.devicePixelRatio > 1.2 && supportHIDPI ) {
         var manifestUrl = URL+'package@2x.manifest';
-      } else {
+      } else {*/
         var manifestUrl = URL+'package.manifest';
-      }
+      //}
 
       var req = navigator.mozApps.installPackage(manifestUrl);
       req.onsuccess = function() {
@@ -25,9 +25,9 @@
         console.log(this.error.name);
       };
 
-    } else {*/
+    } else {
       window.location.href = "app.html"
-    //}
+    }
 
   </script>
 </head>

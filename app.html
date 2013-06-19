@@ -55,14 +55,14 @@
 		background: #eee;
 		margin: .5em 1em .5em 0;
 	}
-  h3 { margin: 20px; }
+  h3 { margin: 20px; font-size: 1.6rem; }
   .fs1 { margin-top: 20px; }
 </style>
 </head>
 <body>
-  <h3>Screen width: <span id="device-w">unknown</span></h3>
-  <h3>Pixel ratio: <span id="device-pr">unknown</span></h3>
-	<h3>Font size: <span id="device-fs">unknown</span></h3>
+  <h3>Screen width: <span id="device-w">Not</span></h3>
+  <h3>Pixel ratio: <span id="device-pr">a</span></h3>
+	<h3>Font size: <span id="device-fs">phone :)</span></h3>
 	<div class="w-main centered">
 	<section class="mtm clearfix" id="glyphs">
 
@@ -95,13 +95,11 @@
 	<script>
 	var mobile = (navigator.userAgent.search("Mobile") != -1);
 	if ( mobile ) {
-      //var ww = window.innerWidth;
-    	//var wh = window.innerHeight;
-      //if potrait -> real with = window width
-      //var realw = (ww/wh < 1) ? ww : wh;
-
+      var ww = window.innerWidth;
+    	var wh = window.innerHeight;
       var pr = window.devicePixelRatio;
-      var realw = window.innerWidth * pr;
+      //if potrait -> real with = window width
+      var realw = (ww/wh < 1) ? ww * pr : wh * pr;
       var fs = realw / 32;
 
       document.getElementById("device-w").innerHTML = realw + 'px';
