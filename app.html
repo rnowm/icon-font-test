@@ -55,98 +55,54 @@
 		background: #eee;
 		margin: .5em 1em .5em 0;
 	}
-  [role="toolbar"] ul {
-    width: 100%;
-  }
-  [role="toolbar"] li {
-    width: 33.3%;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  [role="toolbar"] a {
-    font-size: 0;
-  }
-  [role="toolbar"] a:before {
-    font-size: 3rem;
-    color: #fff;
-  }
-  [role="toolbar"] a.active:before {
-    color: #00caf2
-  }
+  h3 { margin: 20px; }
+  .fs1 { margin-top: 20px; }
 </style>
 </head>
 <body>
+	<h3>Screen width: <span id="screen-w">unknown</span></h3>
 	<div class="w-main centered">
 	<section class="mtm clearfix" id="glyphs">
 
 	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe009;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe009;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe000;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe002;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe001;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe003;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe003;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe004;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe004;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe005;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe005;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe006;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe006;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe007;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe008;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe008;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00a;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe00a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00b;"></div>
-		<input type="text" readonly="readonly" value="&amp;#xe00b;" />
-	</div>
-	</section>
-	<div class="clear"></div>
-	
-  <div role="toolbar">
-    <ul>
-      <li><a class="active" href="app.html" data-icon="&#xe000;">1</a></li>
-      <li><a href="app_1_5.html" data-icon="&#xe006;">1.5</a></li>
-      <li><a href="app_2.html" data-icon="&#xe008;">2</a></li>
-    </ul>
-    <ul>
-    </ul>
+    <div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe000;" />
   </div>
+  <div class="glyph">
+    <div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe001;" />
+  </div>
+  <div class="glyph">
+    <div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe002;" />
+  </div>
+  <div class="glyph">
+    <div class="fs1" aria-hidden="true" data-icon="&#xe003;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe003;" />
+  </div>
+  <div class="glyph">
+    <div class="fs1" aria-hidden="true" data-icon="&#xe004;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe004;" />
+  </div>
+  <div class="glyph">
+    <div class="fs1" aria-hidden="true" data-icon="&#xe005;"></div>
+    <input type="text" readonly="readonly" value="&amp;#xe005;" />
+  </div>
+	
 
 	<script>
-	document.getElementById("glyphs").addEventListener("click", function(e) {
-		var target = e.target;
-		if (target.tagName === "INPUT") {
-			target.select();
-		}
-	});
+	//resizing
+	var mobile = (navigator.userAgent.search("Mobile") != -1);
+	if ( mobile ) {
+      var ww = window.innerWidth;
+    	var wh = window.innerHeight;
+      //if potrait -> real with = window width
+      var realw = (ww/wh < 1) ? ww : wh;
+
+      document.getElementById("screen-w").innerHTML = realw;
+    } else {
+    	document.getElementById("screen-w").innerHTML = "not a phone!"
+    }
 	</script>
 </body>
 </html>
