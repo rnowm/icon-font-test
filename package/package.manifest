@@ -1,9 +1,9 @@
 {
-  "name": "Icon font test",
-  "package_path": "https://rnowm.github.com/icon-font-test/package/package.zip",
-  "size": 23000,
+  "name": "Gradient performance",
+  "package_path": "https://rnowm.github.com/gradient-test/package/package.zip",
+  "size": 59859,
   "version": "1.0",
-  "description": "Icon font test",
+  "description": "Gradient performance demo App",
   "launch_path": "app.html",
   "orientation": ["portrait"],
   "developer": {
