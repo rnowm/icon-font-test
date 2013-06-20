@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-edit_ok, .icon-trash_ok, .icon-share_ok, .icon-grid_ok, .icon-camara_ok, .icon-box_ok {
+.icon-edit, .icon-trash, .icon-share, .icon-grid, .icon-camera, .icon-box {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -37,56 +37,45 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-edit_ok:before {
+.icon-edit:before {
 	content: "\e000";
 }
-.icon-trash_ok:before {
+.icon-trash:before {
 	content: "\e001";
 }
-.icon-share_ok:before {
+.icon-share:before {
 	content: "\e002";
 }
-.icon-grid_ok:before {
+.icon-grid:before {
 	content: "\e003";
 }
-.icon-camara_ok:before {
+.icon-camera:before {
 	content: "\e004";
 }
-.icon-box_ok:before {
+.icon-box:before {
 	content: "\e005";
 }
 
 
-html { font-size: 10px; }
+html { 
+	font-size: 10px; 
+}
 
 body {
-	color: #444;
 	background: #fff;
+  margin: 0;
 }
 
-* {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+section[role="region"] > header:first-child .icon:before {
+  font-size: 3rem;
+  line-height: 5rem;
 }
 
-.glyph {
-	font-size: 3rem;
-	float: left;
-	text-align: center;
-	background: #eee;
-  margin: 2rem 0 0 2rem;
-  width: 6rem;
-  border-radius: 0.5rem;
+[role="toolbar"] button:before {
+  font-size: 3rem;
+  color: #fff;
 }
 
-.centered {
-	margin-left: auto;
-	margin-right: auto;
+[data-type="list"] {
+  margin-top: 1rem;
 }
-
-h3 { margin: 1rem 2rem; font-size: 1.6rem; }
-
-.fs1 { margin: 1rem; }

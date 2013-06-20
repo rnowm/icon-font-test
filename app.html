@@ -1,36 +1,54 @@
 <!doctype html>
 <html>
 <head>
-<title>Your Font/Glyphs</title>
+<title>Icon font test</title>
 <link rel="stylesheet" href="style/style.css" />
+<link rel="stylesheet" href="style/headers.css" />
+<link rel="stylesheet" href="style/lists.css" />
+<link rel="stylesheet" href="style/toolbars.css" />
 </head>
 <body>
-  <h3>Screen width: <span id="device-w">Not</span></h3>
-  <h3>Pixel ratio: <span id="device-pr">a</span></h3>
-	<h3>Font size: <span id="device-fs">phone :)</span></h3>
-	<div class="w-main centered">
-	<section class="mtm clearfix" id="glyphs">
 
-	<div class="glyph">
-    <div class="fs1" data-icon="&#xe000;"></div>
-  </div>
-  <div class="glyph">
-    <div class="fs1" data-icon="&#xe001;"></div>
-  </div>
-  <div class="glyph">
-    <div class="fs1" data-icon="&#xe002;"></div>
-  </div>
-  <div class="glyph">
-    <div class="fs1" data-icon="&#xe003;"></div>
-  </div>
-  <div class="glyph">
-    <div class="fs1" data-icon="&#xe004;"></div>
-  </div>
-  <div class="glyph">
-    <div class="fs1" data-icon="&#xe005;"></div>
+  <section role="region">
+    <header>
+      <menu type="toolbar">
+        <a href="#"><span class="icon" data-icon="&#xe000;">edit</span></a>
+        <a href="#"><span class="icon" data-icon="&#xe001;">delete</span></a>
+      </menu>
+      <h1>Icon font test</h1>
+    </header>
+  </section>
+
+  <section data-type="list">
+    <header>Device info</header>
+    <ul>
+      <li>
+        <p>Screen width</p>
+        <p id="device-w"></p>
+      </li>
+      <li>
+        <p>Pixel ratio</p>
+        <p id="device-pr"></p>
+      </li>
+      <li>
+        <p>Font size</p>
+        <p id="device-fs"></p>
+      </li>
+    </ul>
+  </section>
+
+  <div role="toolbar">
+    <ul>
+      <li><button class="icon-edit">Option 1</button></li>
+      <li><button class="icon-trash">Option 2</button></li>
+      <li><button class="icon-share">Option 3</button></li>
+      <li><button class="icon-grid">Option 4</button></li>
+      <li><button class="icon-camera">Option 5</button></li>
+      <li><button class="icon-box">Option 6</button></li>
+    </ul>
+    <ul></ul>
   </div>
 	
-
 	<script>
   	var mobile = (navigator.userAgent.search("Mobile") != -1);
   	if ( mobile ) {
