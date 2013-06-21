@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, user-scalable=no" />  
 <title>Icon font test</title>
 <link rel="stylesheet" href="style/style.css" />
 <link rel="stylesheet" href="style/headers.css" />
@@ -51,9 +52,9 @@
 	
 	<script>
   	var mobile = (navigator.userAgent.search("Mobile") != -1);
-  	if ( mobile ) {
+  	if ( !mobile ) {
       //resizing
-      function min_device_width() {
+      /*function min_device_width() {
         var match = window.matchMedia("(min-device-width: 320px)").matches;
         var size = 320;
 
@@ -62,18 +63,16 @@
           match = window.matchMedia("(min-device-width: "+size+"px)").matches
         }
         return size - 1;
-      }
-      //var ww = window.innerWidth;
-    	//var wh = window.innerHeight;
-      var pr = window.devicePixelRatio;
+      }*/
+      var ww = window.innerWidth;
+    	var wh = window.innerHeight;
       //if potrait -> real with = window width
-      //var realw = (ww/wh < 1) ? ww * pr : wh * pr;
-      var realw = min_device_width() * pr;
-      var fs = realw / 32;
+      var realw = (ww/wh < 1) ? ww * pr : wh * pr;
+      //var fs = realw / 32;
 
       document.getElementById("device-w").innerHTML = realw + 'px';
       document.getElementById("device-pr").innerHTML = pr;
-      document.getElementById("device-fs").innerHTML = fs + 'px';
+      /*document.getElementById("device-fs").innerHTML = fs + 'px';*/
 
       //Set html font-size
       /* document.documentElement.style.fontSize = fs + 'px'; */
