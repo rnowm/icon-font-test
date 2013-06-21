@@ -67,6 +67,7 @@
       var ww = window.innerWidth;
     	var wh = window.innerHeight;
       //if potrait -> real with = window width
+      var pr = window.devicePixelRatio;
       var realw = (ww/wh < 1) ? ww * pr : wh * pr;
       //var fs = realw / 32;
 
