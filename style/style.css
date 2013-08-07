@@ -31,5 +31,4 @@ section[role="region"] > header:first-child .icon:before {
   position: absolute;
   font-size: 3rem;
   line-height: 6rem;
-  background: #ccc;
 }
