@@ -378,210 +378,211 @@ you can use the generic selector below, but it's slower:
 	content: "\e070";
 }
 
-.icon-media-edit-photo-wallpaper:before {
+.icon-edit-photo-wallpaper:before {
 	content: "\e071";
 }
-.icon-media-undo:before {
+.icon-undo:before {
 	content: "\e072";
 }
-.icon-media-select:before {
+.icon-select:before {
 	content: "\e073";
 }
-.icon-media-crop-free:before {
+.icon-crop-free:before {
 	content: "\e074";
 }
-.icon-media-crop-3-2:before {
+.icon-crop-3-2:before {
 	content: "\e075";
 }
-.icon-media-crop-2-3:before {
+.icon-crop-2-3:before {
 	content: "\e076";
 }
-.icon-media-crop-1-1:before {
+.icon-crop-1-1:before {
 	content: "\e077";
 }
-.icon-media-crop-background:before {
+.icon-crop-background:before {
 	content: "\e078";
 }
-.icon-media-slideshow:before {
+.icon-slideshow:before {
 	content: "\e079";
 }
-.icon-media-auto-flash:before {
+.icon-auto-flash:before {
 	content: "\e07a";
 }
-.icon-media-on-flash:before {
+.icon-on-flash:before {
 	content: "\e07b";
 }
-.icon-media-camera-front:before {
+.icon-camera-front:before {
 	content: "\e07c";
 }
-.icon-media-camera-back:before {
+.icon-camera-back:before {
 	content: "\e07d";
 }
-.icon-media-camera-video-recorder:before {
+.icon-camera-video-recorder:before {
 	content: "\e07e";
 }
-.icon-media-songs:before {
+.icon-songs:before {
 	content: "\e07f";
 }
-.icon-media-camera:before {
+.icon-camera:before {
 	content: "\e080";
 }
-.icon-media-play-list:before {
+.icon-play-list:before {
 	content: "\e081";
 }
-.icon-media-album:before {
+.icon-album:before {
 	content: "\e082";
 }
-.icon-media-grid-view:before {
+.icon-grid-view:before {
 	content: "\e083";
 }
-.icon-media-artist:before {
+.icon-artist:before {
 	content: "\e084";
 }
-.icon-media-Capa-12:before {
+.icon-Capa-12:before {
 	content: "\e085";
 }
-.icon-media-shuffle:before {
+.icon-shuffle:before {
 	content: "\e086";
 }
-.icon-media-alphabetical:before {
+.icon-alphabetical:before {
 	content: "\e087";
 }
-.icon-media-infinite-repeat:before {
+.icon-infinite-repeat:before {
 	content: "\e088";
 }
-.icon-media-skip-forward:before {
+.icon-skip-forward:before {
 	content: "\e089";
 }
-.icon-media-one-repeat:before {
+.icon-one-repeat:before {
 	content: "\e08a";
 }
-.icon-media-skip-backward:before {
+.icon-skip-backward:before {
 	content: "\e08b";
 }
-.icon-media-seek-forward:before {
+.icon-seek-forward:before {
 	content: "\e08c";
 }
-.icon-media-seek-backward:before {
+.icon-seek-backward:before {
 	content: "\e08d";
 }
-.icon-media-stop:before {
+.icon-stop:before {
 	content: "\e08e";
 }
-.icon-media-play:before {
+.icon-play:before {
 	content: "\e08f";
 }
-.icon-media-pause:before {
+.icon-pause:before {
 	content: "\e090";
 }
-.icon-comunications-email-remove-attach:before {
+
+.icon-email-remove-attach:before {
 	content: "\e091";
 }
-.icon-comunications-email-flag:before {
+.icon-email-flag:before {
 	content: "\e092";
 }
-.icon-comunications-email-attachment:before {
+.icon-email-attachment:before {
 	content: "\e093";
 }
-.icon-comunications-email-add:before {
+.icon-email-add:before {
 	content: "\e094";
 }
-.icon-comunications-contact-undo:before {
+.icon-contact-undo:before {
 	content: "\e095";
 }
-.icon-comunications-contact-delete:before {
+.icon-contact-delete:before {
 	content: "\e096";
 }
-.icon-comunications-contact-favorite:before {
+.icon-contact-favorite:before {
 	content: "\e097";
 }
-.icon-comunications-contact-add-favorite:before {
+.icon-contact-add-favorite:before {
 	content: "\e098";
 }
-.icon-comunications-contact-link:before {
+.icon-contact-link:before {
 	content: "\e099";
 }
-.icon-comunications-contact-phone:before {
+.icon-contact-phone:before {
 	content: "\e09a";
 }
-.icon-comunications-contact-location:before {
+.icon-contact-location:before {
 	content: "\e09b";
 }
-.icon-comunications-contact-sms:before {
+.icon-contact-sms:before {
 	content: "\e09c";
 }
-.icon-comunications-contact-email:before {
+.icon-contact-email:before {
 	content: "\e09d";
 }
-.icon-comunications-outgoing-sms:before {
+.icon-outgoing-sms:before {
 	content: "\e09e";
 }
-.icon-comunications-expand:before {
+.icon-expand:before {
 	content: "\e09f";
 }
-.icon-comunications-incoming-sms:before {
+.icon-incoming-sms:before {
 	content: "\e0a0";
 }
-.icon-comunications-check-mark:before {
+.icon-check-mark:before {
 	content: "\e0a1";
 }
-.icon-comunications-check-full:before {
+.icon-check-full:before {
 	content: "\e0a2";
 }
-.icon-comunications-check-empty:before {
+.icon-check-empty:before {
 	content: "\e0a3";
 }
-.icon-comunications-call-outgoing:before {
+.icon-call-outgoing:before {
 	content: "\e0a4";
 }
-.icon-comunications-call-missed:before {
+.icon-call-missed:before {
 	content: "\e0a5";
 }
-.icon-comunications-call-incoming:before {
+.icon-call-incoming:before {
 	content: "\e0a6";
 }
-.icon-comunications-dismiss-keyboard:before {
+.icon-dismiss-keyboard:before {
 	content: "\e0a7";
 }
-.icon-comunications-call-paused:before {
+.icon-call-paused:before {
 	content: "\e0a8";
 }
-.icon-comunications-add-contact:before {
+.icon-add-contact:before {
 	content: "\e0a9";
 }
-.icon-comunications-switch-lines:before {
+.icon-switch-lines:before {
 	content: "\e0aa";
 }
-.icon-comunications-pick-up:before {
+.icon-pick-up:before {
 	content: "\e0ab";
 }
-.icon-comunications-hang-up:before {
+.icon-hang-up:before {
 	content: "\e0ac";
 }
-.icon-comunications-voicemail:before {
+.icon-voicemail:before {
 	content: "\e0ad";
 }
-.icon-comunications-hold:before {
+.icon-hold:before {
 	content: "\e0ae";
 }
-.icon-comunications-sms:before {
+.icon-sms:before {
 	content: "\e0af";
 }
-.icon-comunications-recent-calls:before {
+.icon-recent-calls:before {
 	content: "\e0b0";
 }
-.icon-comunications-contacts:before {
+.icon-contacts:before {
 	content: "\e0b1";
 }
-.icon-comunications-speaker:before {
+.icon-speaker:before {
 	content: "\e0b2";
 }
-.icon-comunications-dialpad:before {
+.icon-dialpad:before {
 	content: "\e0b3";
 }
-.icon-comunications-bluetooth:before {
+.icon-communications-bluetooth:before {
 	content: "\e0b4";
 }
-.icon-comunications-mute:before {
+.icon-mute:before {
 	content: "\e0b5";
 }
