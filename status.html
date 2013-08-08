@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />  
+  <title>Icon font test</title>
+  <link rel="stylesheet" href="style/icons.css" />
+  <link rel="stylesheet" href="style/headers.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <style>
+    #statusbar ul {
+      background: #000;
+      width: 28rem;
+      list-style: none;
+      display: block;
+      overflow: hidden;
+      height: 1.6rem;
+      margin: 1rem 0 0 2rem;
+      padding: 0;
+    }
+    #statusbar ul:first-child {
+      margin: 2rem 0 0 2rem;
+    }
+    #statusbar li {
+      float: left;
+      color: #fff;
+      width: 2rem;
+      height: 1.6rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      text-align: center;
+    }
+    #statusbar li small {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      float: right;
+    }
+    #statusbar li.left {
+      text-align: left
+    }
+    #statusbar .icon {
+      width: 2rem;
+      height: 1.6rem;
+      display: block;
+      overflow: hidden;
+    }
+    #statusbar .icon:before {
+      left: 0.2rem;
+      top: 0;
+      color: #fff;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      z-index: 1;
+    }
+    #statusbar .icon:before .icon:before {
+      z-index: 2;
+    }
+    .disabled:before {
+      color: #666 !important;
+    }
+    .danger:before {
+      color: #ff0000 !important;
+    }
+    .danger.disabled:before {
+      opacity: 0.5;
+    }
+    .recommend, .recommend:before {
+      color: #53b6cc !important;
+    }
+    .step-1:after {
+      width: 0.1rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #ff0000;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-2:after {
+      width: 0.2rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #ffcb00;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-3:after {
+      width: 0.3rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #ffcb00;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-4:after {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-5:after {
+      width: 0.5rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-6:after {
+      width: 0.6rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-7:after {
+      width: 0.7rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-8:after {
+      width: 0.8rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-9:after {
+      width: 0.9rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-10:after {
+      width: 1rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .step-11:after {
+      width: 1.1rem;
+      height: 0.4rem;
+      position: absolute;
+      content: "";
+      background: #fff;
+      left: 0.4rem;
+      top: 0.6rem;
+    }
+    .icon-status-battery-load.step-4:after,
+    .icon-status-battery-load.step-5:after,
+    .icon-status-battery-load.step-6:after,
+    .icon-status-battery-load.step-7:after,
+    .icon-status-battery-load.step-8:after,
+    .icon-status-battery-load.step-9:after,
+    .icon-status-battery-load.step-10:after,
+    .icon-status-battery-empty.ok.step-11:after {
+      background: #24b324;
+    }
+    .icon-status-battery-empty.ok:before {
+      color: #24b324 !important;
+    }
+    .shadow {
+      text-shadow: 0.1rem 0 0 #000,
+                   0 0.1rem 0 #000,
+                   -0.1rem 0 0 #000,
+                   0 -0.1rem 0 #000;
+    }
+  </style>
+</head>
+<body>
+
+  <section role="region">
+    <header>
+      <a href="app.html"><span class="icon icon-back">back</span></a>
+      <h1>Status bar icons</h1>
+    </header>
+  </section>
+
+  <section id="statusbar">
+    <ul>
+      <li class="icon icon-status-battery-empty danger"></li>
+      <li class="icon icon-status-battery-empty step-1"></li>
+      <li class="icon icon-status-battery-empty step-2"></li>
+      <li class="icon icon-status-battery-empty step-3"></li>
+      <li class="icon icon-status-battery-empty step-4"></li>
+      <li class="icon icon-status-battery-empty step-5"></li>
+      <li class="icon icon-status-battery-empty step-6"></li>
+      <li class="icon icon-status-battery-empty step-7"></li>
+      <li class="icon icon-status-battery-empty step-8"></li>
+      <li class="icon icon-status-battery-empty step-9"></li>
+      <li class="icon icon-status-battery-empty step-10"></li>
+      <li class="icon icon-status-battery-empty step-11"></li>
+      <li class="icon icon-status-battery-ask"></li>
+    </ul>
+
+    <ul>
+      <li class="icon icon-status-battery-load"></li>
+      <li class="icon icon-status-battery-load step-1"></li>
+      <li class="icon icon-status-battery-load step-2"></li>
+      <li class="icon icon-status-battery-load step-3"></li>
+      <li class="icon icon-status-battery-load step-4"></li>
+      <li class="icon icon-status-battery-load step-5"></li>
+      <li class="icon icon-status-battery-load step-6"></li>
+      <li class="icon icon-status-battery-load step-7"></li>
+      <li class="icon icon-status-battery-load step-8"></li>
+      <li class="icon icon-status-battery-load step-9"></li>
+      <li class="icon icon-status-battery-load step-10"></li>
+      <li class="icon icon-status-battery-empty step-11 ok"></li>
+    </ul>
+
+    <ul>
+      <li class="icon icon-status-airplane"></li>
+      <li class="icon icon-status-airplane-cross danger"></li>
+      <li class="icon icon-status-signal-full disabled"></li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-1"></span>
+      </li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-2"></span>
+      </li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-3"></span>
+      </li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-4"></span>
+      </li>
+      <li class="icon icon-status-signal-full"></li>
+      <li class="icon icon-status-signal-full">
+        <span class="icon icon-status-signal-roaming"></span>
+      </li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-no danger"></span>
+      </li>
+      <li class="icon icon-status-signal-rectangles disabled"></li>
+      <li class="icon icon-status-signal-rectangles danger"></li>
+      <li class="icon icon-status-signal-full disabled">
+        <span class="icon icon-status-signal-no2 danger shadow"></span>
+      </li>
+    </ul>
+
+    <ul>
+      <li class="icon icon-status-wifi-full disabled"></li>
+      <li class="icon icon-status-wifi-full disabled">
+        <span class="icon icon-status-wifi-1"></span>
+      </li>
+      <li class="icon icon-status-wifi-full disabled">
+        <span class="icon icon-status-wifi-2"></span>
+      </li>
+      <li class="icon icon-status-wifi-full disabled">
+        <span class="icon icon-status-wifi-3"></span>
+      </li>
+      <li class="icon icon-status-wifi-full"></li>
+      <li class="icon icon-status-tethering disabled"></li>
+      <li class="icon icon-status-tethering"></li>
+      <li class="left">H<small>+</small></li>
+      <li class="left">H</li>
+      <li class="left">4G</li>
+      <li class="left">3G</li>
+      <li class="left">2G</li>
+      <li class="left">E</li>
+      <li class="left">O</li>
+    </ul>
+
+    <ul>
+      <li class="icon icon-status-notification-round recommend"></li>
+      <li class="icon icon-status-notification-round disabled"></li>
+      <li class="icon icon-status-notification-message"></li>
+      <li class="recommend">1</li>
+      <li class="recommend">2</li>
+      <li class="recommend">3</li>
+      <li class="recommend">4</li>
+      <li class="recommend">5</li>
+      <li class="recommend">6</li>
+      <li class="recommend">7</li>
+      <li class="recommend">8</li>
+      <li class="recommend">9</li>
+      <li class="recommend">0</li>
+    </ul>
+
+    <ul>
+      <li class="icon icon-status-bluetooth"></li>
+      <li class="icon icon-status-bluetooth disabled"></li>
+      <li class="icon icon-status-mute">
+        <span class="icon icon-status-slash danger shadow"></span>
+      </li>
+      <li class="icon icon-status-usb-mass-storage"></li>
+      <li class="icon icon-status-headphones"></li>
+      <li class="icon icon-status-play"></li>
+      <li class="icon icon-status-fowarding-call"></li>
+      <li class="icon icon-status-geolocalization"></li>
+      <li class="icon icon-status-geolocalization disabled"></li>
+      <li class="icon icon-status-rec danger"></li>
+      <li class="icon icon-status-rec danger disabled"></li>
+      <li class="icon icon-status-alarm"></li>
+      <li class="icon icon-status-sim-alert"></li>
+    </ul>
+
+  </section>
+</body>
+</html>
